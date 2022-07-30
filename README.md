@@ -1,9 +1,21 @@
 # Project-1---LW
 Stacker Arcade Game
-You start off with 4 blocks moving side to side at the bottom.
+You start with a starting block. 
+There will be blocks moving side to side and you have to land them on top of each other as similar as possible. 
 
-Your goal is to keep stacking directly onto the 4 blocks or else it will get harder and harder real fast as for every block you miss, you will lose for the next level. 
+For each bit that is not exactly on top of the previous block, you will lose that chunk as you continue. 
+For every block that you stack, the next block will move faster ultimately making it harder to stack the next one. 
 
-You want to get to the finish line with at least 1 block left. 
+You have a goal to get the highest score possible.
+
+ideas: 
+Add a "Perfect" symbol when the blocks match right on top of each other
+
+issues: 
+how do i make it so that the block only falls when you click a button inside of canvas?
+
+Allow pressing space bar to drop the blocks too.
+
+changing the colors of the blocks.
 
 
