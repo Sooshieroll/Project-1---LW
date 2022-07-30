@@ -18,4 +18,5 @@ Allow pressing space bar to drop the blocks too.
 
 changing the colors of the blocks.
 
+![Screen Shot 2022-07-30 at 12 04 25 AM](https://user-images.githubusercontent.com/102928676/181879190-9d400634-3ac0-4977-86ef-bdda5988b152.png)
 
