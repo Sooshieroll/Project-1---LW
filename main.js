@@ -57,7 +57,11 @@ function animate() {
                 missedBlocks = {
                     y: blocks[current].y,
                     width: difference
-                };
+                }
+                if (difference == 0) {
+                    let popup = document.querySelector('h2');
+                    popup.innerHTML = 'Perfect!';
+                }
                 if (blocks[current].x > blocks[current - 1].x) {
                     blocks[current].width = blocks[current].width - difference;
                     missedBlocks.x = blocks[current].x + blocks[current].width;
@@ -103,6 +107,7 @@ game.onpointerdown = function () {
             mode = 'fall';
     }
 };
+
 
 restart();
 animate();

@@ -8,14 +8,24 @@ For every block that you stack, the next block will move faster ultimately makin
 
 You have a goal to get the highest score possible.
 
-ideas: 
+ideas & issues:
+
 Add a "Perfect" symbol when the blocks match right on top of each other
 
-issues: 
+adding a how to button
+
+
 how do i make it so that the block only falls when you click a button inside of canvas?
 
 Allow pressing space bar to drop the blocks too.
 
 changing the colors of the blocks.
+
+add counter for how many games you played since opening window
+
+border around the blocks
+
+adding sound to the dropping blocks
+
 
 

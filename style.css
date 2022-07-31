@@ -2,21 +2,28 @@ h1 {
     color: darkorchid;
     text-align: center;
     margin-top: 50px;
-
 }
 
-p {
-    text-align: left;
-    margin: 50px;
-    position: relative;
+h2 {
+    text-align: center;
+    color: red;
+    margin: -25px;
+}
+
+.pContainer {
+    text-align: center;
+    margin: 45px;
+    position: absolute;
     font-size: 20px;
     font-weight: bold;
+    width: 20%;
+    border: 1px solid black;
 }
 
 #myGame {
     border: 1px solid black;
-    position: relative;
-    left: 42%;
+    position: fixed;
+    left: 41%;
     top: 50%;
     margin-left: -250px;
     margin-top: -300px;
