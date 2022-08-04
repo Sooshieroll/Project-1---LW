@@ -28,6 +28,7 @@ function gameOver() {
     context.fillText('Game over. Click here to play again!', 50, 50);
 }
 
+
 function animate() {
     if (mode != 'gameOver') {
         context.clearRect(0, 0, game.width, game.height);
@@ -58,10 +59,6 @@ function animate() {
                     y: blocks[current].y,
                     width: difference
                 }
-                if (difference == 0) {
-                    let popup = document.querySelector('h2');
-                    popup.innerHTML = 'Perfect!';
-                }
                 if (blocks[current].x > blocks[current - 1].x) {
                     blocks[current].width = blocks[current].width - difference;
                     missedBlocks.x = blocks[current].x + blocks[current].width;
@@ -77,7 +74,15 @@ function animate() {
                 current++;
                 scrollCounter = height;
                 nextBlock();
+                if (difference == 0) {
+                    let popup = document.querySelector('h2');
+                    popup.innerHTML = 'Perfect!';
+                    setTimeout(function () {
+                        popup.innerHTML = 'Perfect!';
+                    }, 2000);
+                }
             }
+
         }
         missedBlocks.y = missedBlocks.y - ySpeed;
         if (scrollCounter) {
@@ -87,6 +92,17 @@ function animate() {
     }
     window.requestAnimationFrame(animate);
 }
+
+
+
+function flashing() {
+    let flash = document.getElementById('title');
+    setInterval(function () {
+        if (current > 16)
+            flash.style.visibility = (flash.style.visibility == "hidden" ? '' : 'hidden');
+    }, 1000)
+}
+
 
 function restart() {
     blocks.splice(1, blocks.length - 1);
@@ -108,6 +124,13 @@ game.onpointerdown = function () {
     }
 };
 
+document.body.addEventListener("keyup", (e) => {
+    if (e.keyCode === 32)
+        mode = 'fall';
+});
 
+
+
+flashing();
 restart();
 animate();

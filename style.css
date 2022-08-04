@@ -13,7 +13,7 @@ h2 {
 .pContainer {
     text-align: center;
     margin: 45px;
-    position: absolute;
+    position: relative;
     font-size: 20px;
     font-weight: bold;
     width: 20%;
@@ -22,8 +22,8 @@ h2 {
 
 #myGame {
     border: 1px solid black;
-    position: fixed;
-    left: 41%;
+    position: absolute;
+    left: 42%;
     top: 50%;
     margin-left: -250px;
     margin-top: -300px;
@@ -33,9 +33,9 @@ h2 {
 
 
 body {
-    background-color: lightblue;
+    background: url('purple.png');
 }
 
-button {
-    position: absolute;
+.start {
+    color: maroon;
 }
