@@ -67,7 +67,7 @@ function animate() {
                     blocks[current].width = blocks[current].width + difference;
                     blocks[current].x = blocks[current - 1].x;
                 }
-                if (xSpeed > 0)
+                if (xSpeed > 0) // adding speed for when you stack
                     xSpeed++
                 else
                     xSpeed--;
@@ -77,9 +77,9 @@ function animate() {
                 if (difference == 0) {
                     let popup = document.querySelector('h2');
                     popup.innerHTML = 'Perfect!';
-                    setTimeout(function () {
-                        popup.innerHTML = 'Perfect!';
-                    }, 2000);
+                    // setTimeout(function () {
+                    //     popup.innerHTML = 'Perfect!';
+                    // }, 2000);
                 }
             }
 
@@ -115,7 +115,7 @@ game.onpointerdown = function () {
 };
 
 document.body.addEventListener('keydown', (event) => {
-    if (event.keyCode === 32)
+    if (event.key === ' ')
         mode = 'fall';
 });
 
