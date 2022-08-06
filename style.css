@@ -13,11 +13,13 @@ h2 {
 .pContainer {
     text-align: center;
     margin: 45px;
-    position: relative;
+    display: inline-block;
     font-size: 20px;
     font-weight: bold;
     width: 20%;
     border: 1px solid black;
+    padding: 5px;
+
 }
 
 #myGame {
@@ -29,6 +31,12 @@ h2 {
     margin-top: -300px;
     background: linear-gradient(to top, green, teal);
 
+}
+
+@media only screen and (max-width: 1000px) {
+    .pContainer {
+        display: none;
+    }
 }
 
 
