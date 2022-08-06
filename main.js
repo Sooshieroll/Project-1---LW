@@ -31,7 +31,7 @@ function gameOver() {
 
 function animate() {
     if (mode != 'gameOver') {
-        context.clearRect(0, 0, game.width, game.height);
+        context.clearRect(0, 0, game.width, game.height); //clears old game
         context.fillText('Score: ' + (current - 1).toString(), 100, 200);
         for (let n = 0; n < blocks.length; n++) {
             let box = blocks[n];
@@ -94,16 +94,6 @@ function animate() {
 }
 
 
-
-function flashing() {
-    let flash = document.getElementById('title');
-    setInterval(function () {
-        if (current > 16)
-            flash.style.visibility = (flash.style.visibility == "hidden" ? '' : 'hidden');
-    }, 1000)
-}
-
-
 function restart() {
     blocks.splice(1, blocks.length - 1);
     mode = 'bounce';
@@ -124,13 +114,11 @@ game.onpointerdown = function () {
     }
 };
 
-document.body.addEventListener("keyup", (e) => {
-    if (e.keyCode === 32)
+document.body.addEventListener('keydown', (event) => {
+    if (event.keyCode === 32)
         mode = 'fall';
 });
 
 
-
-flashing();
 restart();
 animate();

@@ -10,6 +10,10 @@ h2 {
     margin: -25px;
 }
 
+h3 {
+    padding-left: 50px;
+}
+
 .pContainer {
     text-align: center;
     margin: 45px;
@@ -33,7 +37,7 @@ h2 {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1450px) {
     .pContainer {
         display: none;
     }
