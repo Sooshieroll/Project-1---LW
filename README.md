@@ -29,5 +29,9 @@ Need to Work on/ would like to make better
 - Create different levels of difficulty
 - Make instructions into a button that expands
 
-
-
+Need to Work on/ would like to make better
+- Adding audio to the dropping blocks
+- Create popups for certain actions
+- Make the game look more appealing
+- Create different levels of difficulty
+- make instructions into a button that expands
