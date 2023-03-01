@@ -114,12 +114,12 @@ game.onpointerdown = function () {
     }
 };
 
-document.body.addEventListener('keydown', (event) => {
-    if (event.key === ' ')
-        mode = 'fall';
-    if (mode == 'gameOver')
-        restart();
-});
+// document.body.addEventListener('keydown', (event) => {
+//     if (event.key === ' ')
+//         mode = 'fall';
+//     else if (mode == 'gameOver')
+//         restart();
+// });
 
 
 restart();
