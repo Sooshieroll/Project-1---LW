@@ -75,11 +75,11 @@ function animate() {
                 scrollCounter = height;
                 nextBlock();
                 if (difference == 0) {
-                    let popup = document.querySelector('h2');
+                    let popup = document.querySelector('#flash');
                     popup.innerHTML = 'Perfect!';
-                    // setTimeout(function () {
-                    //     popup.innerHTML = 'Perfect!';
-                    // }, 2000);
+                    setTimeout(function () {
+                        popup.innerHTML = ' ';
+                    }, 3000);
                 }
             }
 
@@ -92,6 +92,8 @@ function animate() {
     }
     window.requestAnimationFrame(animate);
 }
+
+
 
 
 function restart() {
@@ -114,12 +116,14 @@ game.onpointerdown = function () {
     }
 };
 
-// document.body.addEventListener('keydown', (event) => {
-//     if (event.key === ' ')
-//         mode = 'fall';
-//     else if (mode == 'gameOver')
-//         restart();
-// });
+document.body.addEventListener('keydown', (event) => {
+    if (mode == 'gameOver')
+        restart();
+    else if (event.key === ' ')
+            mode = 'fall';
+    } // need to make that when start of the game, the space bar doesnt just fall
+    
+);
 
 
 restart();

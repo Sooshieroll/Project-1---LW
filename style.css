@@ -1,18 +1,15 @@
 h1 {
     color: darkorchid;
-    text-align: center;
-    margin-top: 50px;
+    margin-left: 45%;
 }
 
 h2 {
-    text-align: center;
     color: red;
-    margin: -25px;
+    margin-top: -30px;
+    font-size: 25px;
+    margin-left: 50%;
 }
 
-h3 {
-    padding-left: 50px;
-}
 
 .pContainer {
     text-align: center;
@@ -44,9 +41,9 @@ h3 {
 }
 
 
-body {
+/* body {
     background: url('purple.png');
-}
+} */
 
 .start {
     color: maroon;
